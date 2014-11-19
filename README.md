@@ -3,8 +3,7 @@ Docker Hub build notifications for Slack
 
 A tiny Sinatra app that receives webhooks from Docker Hub and re-posts them as Slack formatted hooks.
 
-
-## There is a running version of this code on Heroku that you are welcome to use
+There is a running version of this code on Heroku that you are welcome to use...
 
 https://slack-docker-hub-integration.herokuapp.com/
 
