@@ -5,6 +5,9 @@ require 'rest-client'
 require 'json'
 
 class SlackDockerApp < Sinatra::Base
+  get "/*" do
+    params[:splat].first
+  end
   post "/*" do
     docker = JSON.parse(request.body.read)
     slack = {text: "Successfully built a new image for <#{docker['repository']['repo_url']}|#{docker['repository']['repo_name']}>"}
