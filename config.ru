@@ -10,7 +10,7 @@ class SlackDockerApp < Sinatra::Base
   end
   post "/*" do
     docker = JSON.parse(request.body.read)
-    slack = {text: "Successfully built a new image for <#{docker['repository']['repo_url']}|#{docker['repository']['repo_name']}>"}
+    slack = {text: "[<#{docker['repository']['repo_url']}|#{docker['repository']['repo_name']}>] new image build complete."}
     RestClient.post "https://hooks.slack.com/#{params[:splat].first}", payload: slack.to_json
   end
 end
