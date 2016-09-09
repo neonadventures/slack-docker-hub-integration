@@ -1,0 +1,6 @@
+{
+  "name": "Slack Docker Hub integration",
+  "description": "A webhook translator between Docker Hub and Slack",
+  "repository": "https://github.com/thomassnielsen/slack-docker-hub-integration",
+  "keywords": ["slack", "docker hub", "docker", "ruby"]
+}
